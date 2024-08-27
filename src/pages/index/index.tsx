@@ -1,4 +1,4 @@
-import { Chart, Interval, PieLabel } from '@antv/f2';
+import { Chart, Interval, Legend, PieLabel } from '@antv/f2';
 import { View } from '@tarojs/components';
 import F2Canvas from 'taro-f2-react';
 import './index.scss';
@@ -45,6 +45,7 @@ function Index() {
             radius: 0.75,
           }}
         >
+          <Legend position="top" />
           <Interval
             x="const"
             y="y"
